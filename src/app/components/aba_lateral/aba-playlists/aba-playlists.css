@@ -1,0 +1,60 @@
+#envelopador-aba-playlists {
+  border-right: 2px solid var(--cor-painel-traco);
+  width: 350px;
+  height: 100vh;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  transition: 0.5s ease-in-out;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#aba-playlists {
+  width: 330px;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  background: var(--cor-painel-nav);
+  box-shadow: 0 4px 4px 0 #00000026;
+  backdrop-filter: blur(3.5px);
+
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.texto_header_playlists {
+  color: var(--cor-texto);
+
+  text-align: center;
+  font-family: 'Martian Mono';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 15px 0;
+}
+
+#botao-abrir-aba-playlists {
+  margin: 15px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

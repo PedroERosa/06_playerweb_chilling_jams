@@ -1,0 +1,14 @@
+<!--<div id="base">
+    <div id="preenchimento" [style.width.%]="porcentagem"></div>
+    <button [style.left.%]="porcentagem"></button>
+</div>-->
+
+<input
+    id="linha_do_tempo"
+    type="range"
+    min="0"
+    [max]="this.tempoMusicaTotal"
+    [value]="this.tempoMusicaPassado"
+    step="1"
+    (change)="this.botaoControlarTempo($any($event.target).value)"
+>

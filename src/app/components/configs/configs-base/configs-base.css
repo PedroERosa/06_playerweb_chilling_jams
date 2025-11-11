@@ -1,0 +1,33 @@
+#base {
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  border: 2px solid var(--cor-painel-traco);
+  background: var(--cor-painel);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(3.5px);
+  transform: translate(0, -15px);
+
+  z-index: 2;
+}
+
+.div-botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.legenda {
+  color: var(--cor-texto);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}

@@ -1,1 +1,127 @@
 /* You can add global styles to this file, and also import other style files */
+/*ESTILOS -----------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Sonsie+One&display=swap');
+
+:root {
+  font-family: 'Martian Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 62.5%;
+
+  /* modo escuro */
+  --cor-bg: #1f252b;
+  --cor-bg-ondas: #222930;
+  --cor-texto: #ffffff;
+  --cor-texto-marca: #ffffff;
+  --cor-icones: #ffffff;
+  --cor-barra: #ffffff59;
+
+  --cor-painel: #ffffff1a;
+  --cor-painel-traco: #ffffff4d;
+  --cor-painel-nav: #ffffff33;
+
+  --cor-botao: #ffffff26;
+  --cor-botao-hover: #ffffff4d;
+  --cor-botao-selecionado: #ffffff73;
+  --cor-botao-hover-realce: #ffffff80;
+  --cor-botao-selecionado-realce: #ffffff;
+  --cor-botao-filtro: #1f252b;
+  --cor-botao-playlist: #1f252bbf;
+  --cor-botao-playlist-traco: #1f252b4d;
+  --cor-botao-playlist-favorito: #237b7bbf;
+  --cor-botao-musica: #1f252b8c;
+}
+
+.modo-claro {
+  /* modo claro */
+  --cor-bg: #FFF5E3;
+  --cor-bg-ondas: #FFEECE;
+  --cor-texto: #573900;
+  --cor-texto-marca: #B87800;
+  --cor-icones: #B87800;
+  --cor-barra: #B8780059;
+
+  --cor-painel: #B878000a;
+  --cor-painel-traco: #B8780080;
+  --cor-painel-nav: #B8780033;
+
+  --cor-botao: #B878001a;
+  --cor-botao-hover: #B878004d;
+  --cor-botao-selecionado: #B8780073;
+  --cor-botao-hover-realce: #7E530080;
+  --cor-botao-selecionado-realce: #7E5300;
+  --cor-botao-filtro: #FFFFFF;
+  --cor-botao-playlist: #ffffffbf;
+  --cor-botao-playlist-traco: #ffffff4d;
+  --cor-botao-playlist-favorito: #FFDFA2bf;
+  --cor-botao-musica: #FFFFFF8c;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--cor-bg);
+}
+
+.imagem_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+button {
+  font-family: 'Martian Mono';
+  cursor: pointer;
+}
+
+#texto-marca {
+  color: var(--cor-texto-marca);
+  text-align: right;
+  font-family: 'Sonsie One';
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin: 15px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.div_filtros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.div_playlists {
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
+}
+
+.oculto {
+  display: none;
+}

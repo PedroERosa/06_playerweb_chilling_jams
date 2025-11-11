@@ -1,0 +1,38 @@
+button {
+    padding: 2px 10px;
+
+    color: var(--cor-texto);
+    background: var(--cor-botao-musica);
+
+    border-radius: 5px;
+    border: 2px solid var(--cor-botao-playlist-traco);
+    
+
+    height: 25px;
+    width: 310px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 1.2rem;
+}
+
+.texto_tags {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button:hover {
+    box-shadow: 0px 0px 4px 2px var(--cor-botao-hover-realce);
+}
+
+button:active {
+    box-shadow: 0 0 4px 2px var(--cor-botao-selecionado-realce);
+}
+
+.ativo {
+    box-shadow: 0 0 4px 2px var(--cor-botao-selecionado-realce);
+}

@@ -1,0 +1,460 @@
+{
+  "playlists": [
+    { 
+      "id": 0,
+      "nome": "alternative songs",
+      "tags": ["good vibes", "tarefas domésticas"],
+      "capa": "imagem_playlist_01",
+      "fonte":"https://youtu.be/2chfsFTNEXw",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "Boy Pablo",
+          "artista": "Losing You",
+          "src": "01/boy_pablo-Losing_You"
+        },
+        { 
+          "id": 1,
+          "titulo": "Wallows",
+          "artista": "Are You Bored Yet? feat. Clairo",
+          "src": "01/Wallows-Are_You_Bored_Yet_feat_Clairo"
+        },
+        { 
+          "id": 2,
+          "titulo": "Dayglow",
+          "artista": "Listerine",
+          "src": "01/Dayglow-Listerine"
+        },
+        { 
+          "id": 3,
+          "titulo": "DANSU",
+          "artista": "DO DO DO",
+          "src": "01/DANSU-DO_DO_DO"
+        },
+        { 
+          "id": 4,
+          "titulo": "Vansire",
+          "artista": "Metamodernity",
+          "src": "01/Vansire_Metamodernity"
+        },
+        { 
+          "id": 5,
+          "titulo": "JAWNY",
+          "artista": "Anything You Want",
+          "src": "01/JAWNY-Anything_You_Want_ft_Doja_Cat"
+        },
+        { 
+          "id": 6,
+          "titulo": "The Griswolds",
+          "artista": "NICE TO MEET YA!",
+          "src": "01/The_Griswolds-NICE_TO_MEET_YA"
+        },
+        {
+          "id": 7,
+          "titulo": "Last Dinosaurs",
+          "artista": "Flying",
+          "src": "01/Last_Dinosaurs-Flying"
+        }
+      ]
+    },
+    { 
+      "id": 1,
+      "nome": "Angel Hare mixtape",
+      "tags": ["good vibes"],
+      "capa": "imagem_playlist_02",
+      "fonte":"https://youtu.be/pOyQLW1o1Hw",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "Guardian Angel",
+          "artista": "Teddy Bart, Starr, Canton, Roddie",
+          "src": "02/Guardian_Angel-Teddy_Bart"
+        },
+        { 
+          "id": 1,
+          "titulo": "Guardian Angel",
+          "artista": "Legends of Doo Wop",
+          "src": "02/Legends_Of_Doo_Wop-Guardian_Angel"
+        },
+        { 
+          "id": 2,
+          "titulo": "I'll Pray For You",
+          "artista": "Vic Schoen and the Andrew Sisters",
+          "src": "02/Ill_Pray_for_You-Andrews_Sisters_with_Vic_Schoen_and_His_Orchestra"
+        },
+        { 
+          "id": 3,
+          "titulo": "Guilty Shadows",
+          "artista": "Cathy Johnson and Friends",
+          "src": "02/Guilty_Shadows-Cathy_Johnson_and_Friends"
+        },
+        { 
+          "id": 4,
+          "titulo": "Find Me",
+          "artista": "Fran Warren, Allen, Roberts, Ralph Burr",
+          "src": "02/Find_Me-Fran_Warren"
+        },
+        { 
+          "id": 5,
+          "titulo": "In My Childhood Daze",
+          "artista": "HoliznaCCO",
+          "src": "02/HoliznaCC0-In_My_ChildHood_Daze"
+        },
+        { 
+          "id": 6,
+          "titulo": "Guardian Angel",
+          "artista": "Masquerade",
+          "src": "02/Masquerade-Guardian_Angel"
+        },
+        {
+          "id": 7,
+          "titulo": "placeholder",
+          "artista": "placeholder",
+          "src": "02/Guardian_Angel-Teddy_Bart"
+        }
+      ]
+    },
+    { 
+      "id": 2,
+      "nome": "dark academia",
+      "tags": ["estudar", "ambientação", "relaxar"],
+      "capa": "imagem_playlist_03",
+      "fonte":"https://youtu.be/NbuI7p9cgLU",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "Vocalise",
+          "artista": "Rachmaninov",
+          "src": "03/Vocalise-Rachmaninoff"
+        },
+        { 
+          "id": 1,
+          "titulo": "Comptine d’un autre",
+          "artista": "Rousseau",
+          "src": "03/Comptine_dun_autre-Rousseau"
+        },
+        { 
+          "id": 2,
+          "titulo": "Elegy for the arctic",
+          "artista": "Ludovico Einaudi",
+          "src": "03/Einaudi_Elegy_For_The_Arctic"
+        },
+        { 
+          "id": 3,
+          "titulo": "Sarabade",
+          "artista": "Bach",
+          "src": "03/Sarabade-Bach"
+        },
+        { 
+          "id": 4,
+          "titulo": "Hauster",
+          "artista": "Albinoni Adagio",
+          "src": "03/HAUSER-Adagio"
+        },
+        { 
+          "id": 5,
+          "titulo": "After Dark",
+          "artista": "Vadim Kislev",
+          "src": "03/After_Dark-Vadim_Kiselev"
+        },
+        { 
+          "id": 6,
+          "titulo": "Dark Eyes",
+          "artista": "André Kostelanetz",
+          "src": "03/Dark_Eyes_Andre_Kostelanetz"
+        },
+        {
+          "id": 7,
+          "titulo": "Second Waltz",
+          "artista": "André Rieu Strauss & Co.",
+          "src": "03/Andre_Rieu-The_Second_Waltz"
+        }
+      ]
+    },
+    { 
+      "id": 3,
+      "nome": "light academia",
+      "tags": ["estudar", "ambientação", "relaxar"],
+      "capa": "imagem_playlist_04",
+      "fonte":"https://youtu.be/jyDfg3_KAgo",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "We Contain Multitudes (from home)",
+          "artista": "Ólafur Arnalds",
+          "src": "04/Olafur_Arnalds-We_Contain_Multitudes"
+        },
+        { 
+          "id": 1,
+          "titulo": "Aba & Ima",
+          "artista": "Olec Mün",
+          "src": "04/Aba_Ima-Olec_Mun"
+        },
+        { 
+          "id": 2,
+          "titulo": "Apart",
+          "artista": "Lucas Forch",
+          "src": "04/Lucas_Forch-Apart"
+        },
+        { 
+          "id": 3,
+          "titulo": "Koto",
+          "artista": "Hideyuki Hashimoto",
+          "src": "04/Koto-Hideyuki_Hashimoto"
+        },
+        { 
+          "id": 4,
+          "titulo": "Quelque Part, Parfois",
+          "artista": "REYN",
+          "src": "04/REYN-Quelque_Part_Parfois "
+        },
+        { 
+          "id": 5,
+          "titulo": "Ambre",
+          "artista": "Nils Frahm",
+          "src": "04/Nils_Frahm-Ambre"
+        },
+        { 
+          "id": 6,
+          "titulo": "When Feeling Blue",
+          "artista": "Hans Francken",
+          "src": "04/Hans_Francken-When_feeling_blue"
+        },
+        {
+          "id": 7,
+          "titulo": "Your Love",
+          "artista": "William Cas",
+          "src": "04/William_Cas-Your_Love"
+        }
+      ]
+    },
+    { 
+      "id": 4,
+      "nome": "70s-80s Japanese Grooves",
+      "tags": ["estudar", "good vibes", "ambientação", "relaxar"],
+      "capa": "imagem_playlist_05",
+      "fonte":"https://youtu.be/Vd7ssAtckko",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "Sky Restaurant",
+          "artista": "Hi-Fi Set",
+          "src": "05/Hi_Fi_Set-Sky_Restaurant"
+        },
+        { 
+          "id": 1,
+          "titulo": "Rainy Saturday & Coffee Break",
+          "artista": "JUNKO OHASHI & Minoya Central Station",
+          "src": "05/Rainy_Saturday_Coffee_Break"
+        },
+        { 
+          "id": 2,
+          "titulo": "Epilogue ni sayonara",
+          "artista": "Masaki Kyomoto",
+          "src": "05/Epilogue_ni_sayonara-Masaki_Kyomoto"
+        },
+        { 
+          "id": 3,
+          "titulo": "Midnight Pretenders",
+          "artista": "Tomoko Aran",
+          "src": "05/Midnight_Pretenders-Tomoko_Aran"
+        },
+        { 
+          "id": 4,
+          "titulo": "Mayonakano Joke",
+          "artista": "Takako Mamiya",
+          "src": "05/Mayonakano-Joke"
+        },
+        { 
+          "id": 5,
+          "titulo": "Love Space",
+          "artista": "Tatsuro Yamashita",
+          "src": "05/Love_Space-Tatsuro_Yamashita"
+        },
+        { 
+          "id": 6,
+          "titulo": "September",
+          "artista": "Tomoyo  Harada",
+          "src": "05/September-Tomoyo Harada"
+        },
+        {
+          "id": 7,
+          "titulo": "Remember Summer Days",
+          "artista": "Anri",
+          "src": "05/Anri-Remember_Summer_Days"
+        }
+      ]
+    },
+    { 
+      "id": 5,
+      "nome": "vaporwave",
+      "tags": ["estudar", "ambientação", "relaxar"],
+      "capa": "imagem_playlist_06",
+      "fonte":"https://youtu.be/9unfRDODtks",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "Sleep Chamber",
+          "artista": "Windows96",
+          "src": "06/Windows96-Sleep_Chamber"
+        },
+        { 
+          "id": 1,
+          "titulo": "Irreal",
+          "artista": "Windows96",
+          "src": "06/Windows96-Irreal"
+        },
+        { 
+          "id": 2,
+          "titulo": "Petty Crimes",
+          "artista": "Windows96",
+          "src": "06/Windows96-Petty_Crimes"
+        },
+        { 
+          "id": 3,
+          "titulo": "Space Pinball",
+          "artista": "Windows96",
+          "src": "06/Windows96-Space_Pinball"
+        },
+        { 
+          "id": 4,
+          "titulo": "Victim Less",
+          "artista": "Windows96",
+          "src": "06/Windows96-Victim_Less"
+        },
+        { 
+          "id": 5,
+          "titulo": "Through The Sky",
+          "artista": "Windows96",
+          "src": "06/Windows96-Through_The_Sky"
+        },
+        { 
+          "id": 6,
+          "titulo": "Apartments",
+          "artista": "Windows96",
+          "src": "06/Windows96-Apartments"
+        },
+        {
+          "id": 7,
+          "titulo": "Dead and Alive ",
+          "artista": "Windows96",
+          "src": "06/Windows96-Dead_and_Alive"
+        }
+      ]
+    },
+    { 
+      "id": 6,
+      "nome": "indie rock",
+      "tags": ["good vibes", "tarefas domésticas"],
+      "capa": "imagem_playlist_07",
+      "fonte":"https://youtu.be/RIsjlnISd3k",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "From the Start",
+          "artista": "Laufey",
+          "src": "07/Laufey-From_The_Start"
+        },
+        { 
+          "id": 1,
+          "titulo": "I won’t run",
+          "artista": "Keanu Bicol",
+          "src": "07/Keanu_Bicol-i_wont_run"
+        },
+        { 
+          "id": 2,
+          "titulo": "Tek It (I Watch The Moon)",
+          "artista": "Cafuné",
+          "src": "07/Cafune-Tek_It"
+        },
+        { 
+          "id": 3,
+          "titulo": "Runaway",
+          "artista": "Phoneboy",
+          "src": "07/Phoneboy-Runaway"
+        },
+        { 
+          "id": 4,
+          "titulo": "Notion",
+          "artista": "The Rare Occasions",
+          "src": "07/The_Rare_Occasions-Notion"
+        },
+        { 
+          "id": 5,
+          "titulo": "don’t know",
+          "artista": "Keanu Bicol",
+          "src": "07/dont_know-Keanu_Bicol"
+        },
+        { 
+          "id": 6,
+          "titulo": "bird brain",
+          "artista": "Andrew Garden",
+          "src": "07/Andrew_Garden-bird_brain"
+        },
+        {
+          "id": 7,
+          "titulo": "Fallin’",
+          "artista": "Your Neighbors",
+          "src": "07/Your_Neighbors-Fallin"
+        }
+      ]
+    },
+    { 
+      "id": 7,
+      "nome": "frutiger aero",
+      "tags": ["ambientação", "relaxar"],
+      "capa": "imagem_playlist_08",
+      "fonte":"https://youtu.be/pr6t6AJ6lho",
+      "musicas": [
+        {
+          "id": 0,
+          "titulo": "home menu",
+          "artista": "alyzea",
+          "src": "08/alyzea-home_menu"
+        },
+        { 
+          "id": 1,
+          "titulo": "r e f l e c t i o n s",
+          "artista": "alyzea",
+          "src": "08/alyzea-r_e_f_l_e_c_t_i_o_n_s"
+        },
+        { 
+          "id": 2,
+          "titulo": "interface loading",
+          "artista": "alyzea",
+          "src": "08/alyzea-interface_loading"
+        },
+        { 
+          "id": 3,
+          "titulo": "aero garden",
+          "artista": "alyzea",
+          "src": "08/alyzea-aero_garden"
+        },
+        { 
+          "id": 4,
+          "titulo": "logged in for hours",
+          "artista": "alyzea",
+          "src": "08/alyzea-logged_in_for_hours"
+        },
+        { 
+          "id": 5,
+          "titulo": "distant ocean",
+          "artista": "alyzea",
+          "src": "08/alyzea-distant_ocean"
+        },
+        { 
+          "id": 6,
+          "titulo": "crystal settings",
+          "artista": "alyzea",
+          "src": "08/alyzea-crystal_settings"
+        },
+        {
+          "id": 7,
+          "titulo": "connected silence",
+          "artista": "alyzea",
+          "src": "08/alyzea-connected_silence"
+        }
+      ]
+    }
+  ]
+}

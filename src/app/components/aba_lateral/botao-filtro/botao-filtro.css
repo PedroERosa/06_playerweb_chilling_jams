@@ -1,0 +1,17 @@
+button {
+    font-size: 1.2rem;
+    padding: 3px 12px;
+    color: var(--cor-texto);
+    background-color: var(--cor-botao-filtro);
+
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 4px 2px var(--cor-botao-hover-realce);
+}
+
+button:active, .ativo {
+    outline: solid 2px var(--cor-botao-selecionado-realce);
+}

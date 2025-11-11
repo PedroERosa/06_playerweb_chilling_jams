@@ -1,0 +1,33 @@
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+
+  background: #ffffff00;
+  border: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-botao-menor::ng-deep svg {
+  width: 75%;
+  height: 75%;
+}
+
+button:hover {
+  background: var(--cor-botao);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background: var(--cor-botao-hover);
+}
+
+.ativo {
+  background: var(--cor-botao);
+  box-shadow: 0 0 4px 2px var(--cor-botao-selecionado-realce);
+}

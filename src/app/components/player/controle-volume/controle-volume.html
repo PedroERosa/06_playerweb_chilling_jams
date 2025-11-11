@@ -1,0 +1,11 @@
+<div id="base_volume">
+    <input
+        id="controle_volume"
+        type="range"
+        min="0"
+        max="100"
+        [value]="this.volume"
+        step="1"
+        (change)="this.botaoControlarVolume($any($event.target).value)"
+    />
+</div>

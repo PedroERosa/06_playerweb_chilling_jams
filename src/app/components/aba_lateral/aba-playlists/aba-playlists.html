@@ -1,0 +1,24 @@
+<app-botao-flutuante id="botao-abrir-aba-playlists" (click)="abrirAbaPlaylist()" [style.display]="estaAberto() ? 'none' : 'flex'">
+    <!-- menu -->
+    <svg class="icone" data-name="icone_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <defs><style>.icone-path {fill: var(--cor-icones)}</style></defs>
+        <g>
+            <path class="icone-path" d="M83.25,79.83c-8.93,0-17.88,0-26.82,0-2.09,0-4.26,0-6.35,0-2.57,0-5.2,0-7.76,0-1.13,0-2.4,0-3.53,0-8.87.08-8.32-12.48,2-11.02.08.01.16.02.24.02,10.07,0,20.16,0,30.23,0,2.57,0,5.2,0,7.76,0,.88,0,1.94,0,2.82,0,8.04-1.21,9.6,10.54,1.41,11Z"/>
+            <path class="icone-path" d="M83.25,31.1c-8.93,0-17.88,0-26.82,0-2.09,0-4.26,0-6.35,0-2.57,0-5.2,0-7.76,0-1.13,0-2.4,0-3.53,0-8.87.08-8.32-12.48,2-11.02.08.01.16.02.24.02,10.07,0,20.16,0,30.23,0,2.57,0,5.2,0,7.76,0,.88,0,1.94,0,2.82,0,8.04-1.21,9.6,10.54,1.41,11Z"/>
+            <path class="icone-path" d="M83.25,55.46c-8.93,0-17.88,0-26.82,0-2.09,0-4.26,0-6.35,0-2.57,0-5.2,0-7.76,0-1.13,0-2.4,0-3.53,0-8.87.08-8.32-12.48,2-11.02.08.01.16.02.24.02,10.07,0,20.16,0,30.23,0,2.57,0,5.2,0,7.76,0,.88,0,1.94,0,2.82,0,8.04-1.21,9.6,10.54,1.41,11Z"/>
+        </g>
+        <g>
+            <path class="icone-path" d="M18.13,81.19c-9-.07-9.09-13.63-.03-13.66,9.08.05,9.04,13.51.03,13.66Z"/>
+            <path class="icone-path" d="M18.13,32.45c-9-.06-9.1-13.62-.03-13.64,9.08,0,9.03,13.52.03,13.64Z"/>
+            <path class="icone-path" d="M18.13,56.82c-9-.05-9.09-13.64-.03-13.66,9.07.04,9.03,13.53.03,13.66Z"/>
+        </g>
+    </svg>
+  </app-botao-flutuante>
+
+<div id="envelopador-aba-playlists" [style.width.px]="estaAberto() ? '350' : '0'" [style.border-right-width.px]="estaAberto() ? '2' : '0'">
+    <div id="aba-playlists">
+    <app-botao-fechar class="botao-fechar" (click)="fecharAbaPlaylist()"></app-botao-fechar>
+    <p class="texto_header_playlists">playlists</p>
+    <ng-content></ng-content>
+</div>
+</div>

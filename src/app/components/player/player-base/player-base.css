@@ -1,0 +1,121 @@
+#envelopador {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#base {
+  width: 700px;
+  height: 350px;
+  border-radius: 50px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 2px solid var(--cor-painel-traco);
+  background: var(--cor-painel);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(3.5px);
+  transform: translate(0, -15px);
+}
+
+.imagem_album {
+  width: 450px;
+  height: 450px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.imagem_album_bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -1;
+  filter: blur(225px);
+}
+
+.texto_nome_playlist {
+  margin-top: 20px;
+  color: var(--cor-texto);
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.texto_tempo_musica {
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  
+  line-height: normal;
+
+  width: 100%;
+  text-align: right;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.texto_tempo_musica_passado {
+  font-weight: 200;
+}
+
+.texto_tempo_musica_total {
+  font-weight: 400;
+}
+
+.texto_nome_musica {
+  color: var(--cor-texto);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#div_musica {
+  margin: 0 18px;
+}
+
+#barra_tempo_base {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  margin: 20px 0;
+
+  opacity: 0.35;
+  background: #fff;
+}
+
+#div_botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#div_botao_volume {
+  position: relative;
+}
+
+#elemento_controle_volume {
+  position: absolute;
+  left: 50%;
+  top: -360px;
+  z-index: 2;
+  transform: translate(-20px, 0);
+}

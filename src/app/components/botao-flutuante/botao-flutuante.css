@@ -1,0 +1,30 @@
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+
+  background: var(--cor-botao);
+  outline: 2px solid var(--cor-painel-traco);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(3.5px);
+  border: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-flutuante::ng-deep svg{
+  width: 70%;
+  height: 70%;
+}
+
+button:hover {
+  background: var(--cor-botao-hover);
+}
+
+button:active {
+  background: var(--cor-botao-selecionado);
+}

@@ -1,7 +1,8 @@
 <audio
     #musica 
-    [src]="'/songs/' + musicaSrc + '.mp3'"
+    src=''
     (timeupdate)="atualizarTempoAtual(musica.currentTime)"
     (volumechange)="atualizarVolume(musica.volume * 100)"
     (loadedmetadata)="atualizarTempoMax(musica.duration)"
+    (ended)="eventoFim()"
 ></audio>

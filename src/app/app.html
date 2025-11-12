@@ -32,13 +32,13 @@
     }
   </app-aba-playlists>
 
-  <app-player-base (tocar)="tocarMusica()" (pausar)="pausarMusica()" (avancar)="avancarMusica()" (retroceder)="retrocederMusica()" (alternarAleatorio)="alternarAleatoriedadeMusicas()" (controlarVolume)="alterarVolume($event)" [estaAleatorioFlag]="this.estadoAtual.estaAleatorizado" [estaAlterandoVolumeFlag]="false" [estaTocandoFlag]="this.estadoAtual.estaTocando" [capaSrc]="this.listaDePlaylists[this.estadoAtual.playlistIndex].capa" [tempoMusicaPassado]="this.estadoAtual.tempoMusicaPassado" [tempoMusicaTotal]="this.estadoAtual.tempoMusicaTotal" [volume]="this.estadoAtual.volume" (controlarTempo)="alterarTempoMusica($event)">
+  <app-player-base (tocar)="tocarMusica()" (pausar)="pausarMusica()" (avancar)="avancarMusica()" (retroceder)="retrocederMusica()" (alternarAleatorio)="alternarAleatoriedadeMusicas()" (controlarVolume)="alterarVolume($event)" [estaAleatorioFlag]="this.estadoAtual.estaAleatorizado" [estaTocandoFlag]="this.estadoAtual.estaTocando" [capaSrc]="this.listaDePlaylists[this.estadoAtual.playlistIndex].capa" [tempoMusicaPassado]="this.estadoAtual.tempoMusicaPassado" [tempoMusicaTotal]="this.estadoAtual.tempoMusicaTotal" [volume]="this.estadoAtual.volume" (controlarTempo)="alterarTempoMusica($event)">
 
     <span nome-playlist>{{this.listaDePlaylists[this.estadoAtual.playlistIndex].nome}}</span>
     <span nome-musica>{{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].titulo}} - {{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].artista}}</span>
   </app-player-base>
 
-  <app-elemento-musica (tempoAtual)="definirTempoMusicaPassado($event)" (tempoMax)="definirTempoMusicaTotal($event)" (volume)="definirVolume($event)"></app-elemento-musica>
+  <app-elemento-musica (tempoAtual)="definirTempoMusicaPassado($event)" (tempoMax)="definirTempoMusicaTotal($event)" (volume)="definirVolume($event)" (fim)="avancarMusica()"></app-elemento-musica>
 
   <p id="texto-marca">Chilling jams</p>
 

@@ -105,6 +105,7 @@ export class App implements OnInit, AfterViewInit {
   }
 
   definirTempoMusicaPassado(tempo: number) {
+    if (tempo > this.estadoAtual.tempoMusicaTotal) tempo = this.estadoAtual.tempoMusicaTotal;
     this.estadoAtual.tempoMusicaPassado = tempo;
   }
 
@@ -131,9 +132,7 @@ export class App implements OnInit, AfterViewInit {
     // atualiza index de musica no estado atual
     this.estadoAtual.musicaIndex = index;
     this.elementoMusica.alterarMusica(this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].src);
-    //this.tocarMusica();
-    this.estadoAtual.estaTocando = false;
-    this.definirTempoMusicaPassado(0);
+    this.tocarMusica();
     console.log('Musica ' + (index +1) + ' atualizada');
   }
 

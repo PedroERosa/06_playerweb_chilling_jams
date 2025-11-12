@@ -18,6 +18,8 @@ export class ElementoMusica {
 
   volume = output<number>();
 
+  fim = output<void>();
+
   atualizarTempoAtual(tempo: number):void {
     this.tempoAtual.emit(tempo);
   }
@@ -30,6 +32,10 @@ export class ElementoMusica {
     this.volume.emit(volume);
   }
 
+  eventoFim():void {
+    this.fim.emit();
+  }
+
   play() {
     this.musica.nativeElement.play();
   }
@@ -40,7 +46,7 @@ export class ElementoMusica {
 
   alterarMusica(src: string) {
     this.musica.nativeElement.pause();
-    this.musicaSrc = src;
+    this.musica.nativeElement.src = '/songs/' + src + '.mp3';
     this.musica.nativeElement.load();
   }
 

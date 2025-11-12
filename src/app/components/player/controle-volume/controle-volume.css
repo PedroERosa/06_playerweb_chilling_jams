@@ -10,7 +10,7 @@
   align-content: center;
 
   border: none;
-  background: var(--cor-painel);
+  background: var(--cor-botao);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(3.5px);
 }

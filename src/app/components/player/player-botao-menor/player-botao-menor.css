@@ -31,3 +31,19 @@ button:active {
   background: var(--cor-botao);
   box-shadow: 0 0 4px 2px var(--cor-botao-selecionado-realce);
 }
+
+/* RESPONSIVIDADE ------------------------------------------------------------*/
+
+@media (max-height: 800px) {
+  button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 900px), (max-height: 450px) {
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}

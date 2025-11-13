@@ -37,27 +37,27 @@
 
 .modo-claro {
   /* modo claro */
-  --cor-bg: #FFF5E3;
-  --cor-bg-ondas: #FFEECE;
+  --cor-bg: #fff5e3;
+  --cor-bg-ondas: #ffeece;
   --cor-texto: #573900;
-  --cor-texto-marca: #B87800;
-  --cor-icones: #B87800;
-  --cor-barra: #B8780059;
+  --cor-texto-marca: #b87800;
+  --cor-icones: #b87800;
+  --cor-barra: #b8780059;
 
-  --cor-painel: #B878000a;
-  --cor-painel-traco: #B8780080;
-  --cor-painel-nav: #B8780033;
+  --cor-painel: #b878000a;
+  --cor-painel-traco: #b8780080;
+  --cor-painel-nav: #b8780033;
 
-  --cor-botao: #B878001a;
-  --cor-botao-hover: #B878004d;
-  --cor-botao-selecionado: #B8780073;
-  --cor-botao-hover-realce: #7E530080;
-  --cor-botao-selecionado-realce: #7E5300;
-  --cor-botao-filtro: #FFFFFF;
+  --cor-botao: #b878001a;
+  --cor-botao-hover: #b878004d;
+  --cor-botao-selecionado: #b8780073;
+  --cor-botao-hover-realce: #7e530080;
+  --cor-botao-selecionado-realce: #7e5300;
+  --cor-botao-filtro: #ffffff;
   --cor-botao-playlist: #ffffffbf;
   --cor-botao-playlist-traco: #ffffff4d;
-  --cor-botao-playlist-favorito: #FFDFA2bf;
-  --cor-botao-musica: #FFFFFF8c;
+  --cor-botao-playlist-favorito: #ffdfa2bf;
+  --cor-botao-musica: #ffffff8c;
 }
 
 body,
@@ -124,4 +124,18 @@ button {
 
 .oculto {
   display: none;
+}
+
+/* RESPONSIVIDADE ------------------------------------------------------------*/
+
+@media (max-height: 800px) {
+  #texto-marca {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 900px), (max-height: 450px) {
+  #texto-marca {
+    font-size: 1.6rem;
+  }
 }

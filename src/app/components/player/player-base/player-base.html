@@ -1,6 +1,11 @@
 <div id="envelopador">
+
     <img class="imagem_album" [src]="'/images/' + capaSrc + '.png'">
+
     <div id="base">
+
+        <!-- Recebe a aparência da base para resolver problema de separação de z-index quando o efeito de frosted glass é aplicado -->
+        <div id="base_preenchimento"></div>
 
         <p class="texto_nome_playlist"><ng-content select="[nome-playlist]"></ng-content></p>
 

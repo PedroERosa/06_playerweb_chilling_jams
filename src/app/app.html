@@ -1,10 +1,26 @@
 <main class="main">
-  
+
   <app-aba-playlists>
     <div class="div_filtros">
-      <app-botao-filtro (click)="this.filtrar('favorito')" [estaAtivoFlag]="this.tagEstaFiltrada('favorito')" [class.oculto]='validarAtivo(this.estadoAtual.favoritos, [""])'>favorito</app-botao-filtro>
+      <app-botao-filtro 
+        (click)="this.filtrar('favorito')" 
+        [estaAtivoFlag]="this.tagEstaFiltrada('favorito')" 
+        [class.oculto]='validarAtivo(this.estadoAtual.favoritos, [""])'>
+
+        favorito
+
+      </app-botao-filtro>
+
       @for (filtro of estadoAtual.filtrosTodos; track filtro) {
-      <app-botao-filtro (click)="this.filtrar(filtro)" [estaAtivoFlag]="this.tagEstaFiltrada(filtro)">{{filtro}}</app-botao-filtro>
+
+        <app-botao-filtro 
+          (click)="this.filtrar(filtro)" 
+          [estaAtivoFlag]="this.tagEstaFiltrada(filtro)">
+
+          {{filtro}}
+          
+        </app-botao-filtro>
+        
       }
     </div>
     
@@ -12,18 +28,29 @@
 
       <div class="div_playlists" [class.oculto]="this.playlistEstaFiltrada(playlist.tags , playlist.id)">
 
-        <app-botao-playlist (atualizarPlaylist)="atualizarPlaylist(playlist.id)" (favoritar)="favoritar(playlist.id)" [estaAtivoFlag]="validarAtivo(this.estadoAtual.playlistIndex, playlist.id)" [estaFavoritadoFlag]="estaFavoritado(playlist.id)">
+        <app-botao-playlist 
+          (atualizarPlaylist)="atualizarPlaylist(playlist.id)" 
+          (favoritar)="favoritar(playlist.id)" 
+          [estaAtivoFlag]="validarAtivo(this.estadoAtual.playlistIndex, playlist.id)" 
+          [estaFavoritadoFlag]="estaFavoritado(playlist.id)">
+
           <img capa-playlist [src]="'/images/' + playlist.capa + '_min.png'" alt="{{ playlist.nome }}">
           <span nome-playlist>{{playlist.nome}}</span>
           <span tags-playlist>{{playlist.tags}}</span>
+        
         </app-botao-playlist>
       
         @if (playlist.id == this.estadoAtual.playlistIndex) {
+
           @for (musica of playlist.musicas; track musica.id) {
 
-            <app-botao-musica (click)="atualizarMusica(musica.id)" [estaAtivoFlag]="validarAtivo(this.estadoAtual.musicaIndex, musica.id)">
+            <app-botao-musica 
+              (click)="atualizarMusica(musica.id)" 
+              [estaAtivoFlag]="validarAtivo(this.estadoAtual.musicaIndex, musica.id)">
+
               <span index-musica>{{musica.id + 1}}</span>
               <span nome-musica>{{musica.titulo}} - {{musica.artista}}</span>
+
             </app-botao-musica>
 
           }
@@ -32,19 +59,47 @@
     }
   </app-aba-playlists>
 
-  <app-player-base (tocar)="tocarMusica()" (pausar)="pausarMusica()" (avancar)="avancarMusica()" (retroceder)="retrocederMusica()" (alternarAleatorio)="alternarAleatoriedadeMusicas()" (controlarVolume)="alterarVolume($event)" [estaAleatorioFlag]="this.estadoAtual.estaAleatorizado" [estaTocandoFlag]="this.estadoAtual.estaTocando" [capaSrc]="this.listaDePlaylists[this.estadoAtual.playlistIndex].capa" [tempoMusicaPassado]="this.estadoAtual.tempoMusicaPassado" [tempoMusicaTotal]="this.estadoAtual.tempoMusicaTotal" [volume]="this.estadoAtual.volume" (controlarTempo)="alterarTempoMusica($event)">
+  <app-player-base 
+    (tocar)="tocarMusica()" 
+    (pausar)="pausarMusica()" 
+    (avancar)="avancarMusica()" 
+    (retroceder)="retrocederMusica()" 
+    (alternarAleatorio)="alternarAleatoriedadeMusicas()" 
+    (controlarVolume)="alterarVolume($event)" 
+    (controlarTempo)="alterarTempoMusica($event)" 
+    [estaAleatorioFlag]="this.estadoAtual.estaAleatorizado" 
+    [estaTocandoFlag]="this.estadoAtual.estaTocando" 
+    [capaSrc]="this.listaDePlaylists[this.estadoAtual.playlistIndex].capa" 
+    [tempoMusicaPassado]="this.estadoAtual.tempoMusicaPassado" 
+    [tempoMusicaTotal]="this.estadoAtual.tempoMusicaTotal" 
+    [volume]="this.estadoAtual.volume">
 
-    <span nome-playlist>{{this.listaDePlaylists[this.estadoAtual.playlistIndex].nome}}</span>
-    <span nome-musica>{{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].titulo}} - {{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].artista}}</span>
+    <span nome-playlist>
+      {{this.listaDePlaylists[this.estadoAtual.playlistIndex].nome}}
+    </span>
+    <span nome-musica>
+      {{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].titulo}} - 
+      {{this.listaDePlaylists[this.estadoAtual.playlistIndex].musicas[this.estadoAtual.musicaIndex].artista}}
+    </span>
   </app-player-base>
 
-  <app-elemento-musica (tempoAtual)="definirTempoMusicaPassado($event)" (tempoMax)="definirTempoMusicaTotal($event)" (volume)="definirVolume($event)" (fim)="avancarMusica()"></app-elemento-musica>
+  <app-elemento-musica 
+    (tempoAtual)="definirTempoMusicaPassado($event)" 
+    (tempoMax)="definirTempoMusicaTotal($event)" 
+    (volume)="definirVolume($event)" 
+    (fim)="avancarMusica()">
+  </app-elemento-musica>
 
   <p id="texto-marca">Chilling jams</p>
 
-  <app-elementos-inferiores [estaEscuroFlag]="estaEscuro()" (modoEscuro)="modoEscuro()" (modoClaro)="modoClaro()"></app-elementos-inferiores>
+  <app-elementos-inferiores 
+    [estaEscuroFlag]="estaEscuro()" 
+    (modoEscuro)="modoEscuro()" 
+    (modoClaro)="modoClaro()">
+  </app-elementos-inferiores>
   
 </main>
+
 
 <svg class="imagem_background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" preserveAspectRatio="xMidYMid slice">
     <defs><style>.fundo-path {fill: var(--cor-bg-ondas)}</style></defs>
